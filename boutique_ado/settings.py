@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['amory-boutique-ado-2c75ee082f79.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['amory-boutique-ado-2c75ee082f79.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -180,7 +180,6 @@ if 'USE_AWS' in os.environ:
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000'
     }
-    
     # S3 Bucket config
     AWS_STORAGE_BUCKET_NAME = 'amory-boutique-ado'
     AWS_S3_REGION_NAME = 'eu-north-1'
